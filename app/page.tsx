@@ -104,7 +104,7 @@ export default function Home() {
             If you'd like to collaborate or have any questions, feel free to reach out!
           </p>
           <div className="contact-form-container">
-            <a href="mailto:tanzeel@example.com" className="contact-button">
+            <a href="mailto: tanzeelnaveed8@gmail.com" className="contact-button">
               Email Me
             </a>
             <form className="contact-form" onSubmit={handleSubmit}>

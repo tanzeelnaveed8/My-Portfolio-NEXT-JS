@@ -130,6 +130,12 @@ export default function Home() {
                 Send Message
               </button>
             </form>
+            <style>
+  .form-input,
+  .form-textarea {
+    color: black; /* Set text color to black */
+  }
+</style>
             {/* GitHub and LinkedIn Links */}
             <div className="social-links mt-4">
               <a href="https://github.com/tanzeelnaveed8" className="social-link" target="_blank" rel="noopener noreferrer">

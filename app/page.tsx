@@ -111,7 +111,7 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="form-input"
+                className="form-input text-light"
                 required
               />
               <input

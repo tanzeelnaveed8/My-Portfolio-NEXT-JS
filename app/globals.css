@@ -113,6 +113,4 @@ body {
 .submit-button:hover {
   @apply bg-blue-700; /* Darken on hover using Tailwind */
 }
-.form-textarea {
-    color: black; /* Set text color to black */
-  }
+

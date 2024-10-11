@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --dark-color: #000000;
+  --light-color: #FFFFFF;
+  --primary-color: #1D4ED8;
+}
+
+body {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.container {
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto;
+  padding-left: 2rem; /* Equivalent to px-8 */
+  padding-right: 2rem; /* Equivalent to px-8 */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 1rem 2rem; /* py-4 px-8 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* mx-auto */
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  align-items: center; /* items-center */
+}
+
+.navbar h1 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+}
+
+.navbar ul {
+  display: flex; /* flex */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 1.5rem; /* space-x-6 */
+}
+
+.navbar li:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.navbar a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--primary-color); /* hover:text-primary */
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 4rem 1rem; /* Adjust padding for desktop and mobile */
+  text-align: center; /* Center text */
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-4; /* Use Tailwind for consistency */
+}
+
+.section-description {
+  margin-bottom: 1.5rem; /* Space below description */
+}
+
+.contact-form-container {
+  @apply flex flex-col items-center max-w-md mx-auto; /* Tailwind for center alignment */
+}
+
+.contact-button {
+  @apply bg-primary text-white py-3 px-6 rounded-lg mb-4 w-full; /* Use Tailwind for styling */
+}
+
+.contact-form {
+  width: 100%; /* Full width for form */
+}
+
+.form-input,
+.form-textarea {
+  @apply border-2 border-gray-300 rounded-md py-3 px-4 w-full mb-4 transition-colors; /* Use Tailwind */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  @apply border-primary; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-button {
+  @apply bg-primary text-white py-3 px-6 rounded-md w-full; /* Use Tailwind for styling */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+  @apply bg-blue-700; /* Darken on hover using Tailwind */
+}
